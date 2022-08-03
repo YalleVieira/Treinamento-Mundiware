@@ -1,0 +1,21 @@
+nav {
+    border-top: 1px solid #99989859;
+
+}
+
+.nav_content {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav_content a {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #585858;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}

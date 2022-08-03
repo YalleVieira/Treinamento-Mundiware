@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 } 
+
+.container {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 20px;
+}
