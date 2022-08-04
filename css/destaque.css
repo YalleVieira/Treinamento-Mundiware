@@ -4,13 +4,10 @@
   grid-auto-rows: auto;
 }
 
-.destaque_content {
-  grid-column: span 6;
-}
 
 .capa_destaque {
-    max-width: 90%;
-    min-width: 89%;
+  max-width: 90%;
+  min-width: 89%;
 }
 
 .capa_destaque h4 {
@@ -20,42 +17,60 @@
   font-weight: 700;
 }
 
+
 .capa_destaque img {
-  max-width: inherit;
-  border-radius: 14px;
+  max-width: 400px;
+  min-width: 399px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.destaque_content {
+  grid-column: span 6;
+}
+
+.destaque_content a {
+  text-decoration: none;
 }
 
 .destaque_content .carrossel_destaque {
-    background-color: #b8023f;
-    border-radius: 14px;
-    color: white;
-    padding: 1.5em;
+  background-color: #b8023f;
+  border-radius: 10px;
+  color: white;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+  top: -52%;
+    left: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+.destaque_content .carrossel_destaque .carrossel_text_content{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: relative;
-    top: -53%;
-    left: 60%;
-    width: 50%;
-    height: 50%;
+        flex-direction: column;
+        gap: 10px;
 }
 
 .destaque_content .carrossel_destaque p {
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .destaque_content .carrossel_destaque h2 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    font-size: 26px;
-    font-weight: 800;
-    line-height: 30px;
-    max-height: 70%;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 30px;
+  max-height: 70%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .destaque_content .carrossel_destaque .description_destaque {
@@ -66,6 +81,18 @@
   max-height: 30%;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  font-weight:normal;
+  font-weight: normal;
   text-transform: unset;
+}
+
+.destaque_content .carrossel_destaque .carrossel_setas {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.destaque_content .carrossel_destaque .carrossel_setas img {
+  cursor: pointer;
+  width: 45px;
+  height: 5px;
 }

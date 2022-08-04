@@ -1,0 +1,51 @@
+.container_chamada_box {
+    grid-column: span 6;
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    top: 1;
+  }
+
+  .container_chamada_box a {
+    text-decoration: none;
+  }
+
+  .chamada_box_destaque {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 3%;
+  }
+  
+  .chamada_box_destaque img {
+      max-width: 100%;
+      border-radius: 10px;
+      min-width: 199px;
+  }
+  
+  .chamada_box_destaque h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    color: green;
+  }
+  
+  .chamada_box_2 h4{
+      color: purple;
+  }
+  
+  .chamada_box_destaque p {
+    font-size: 17px;
+    font-weight: 800;
+    color: #585858;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 18px;
+    max-height: 30%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-transform: unset;
+  }
+  
