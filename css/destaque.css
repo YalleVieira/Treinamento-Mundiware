@@ -44,10 +44,10 @@
   justify-content: space-between;
   gap: 10px;
   position: absolute;
-    top: 87%;
+    top: 43%;
     left: 27%;
     width: 23%;
-    height: 80%;
+    height: 55%;
 }
 
 .destaque_content .carrossel_destaque .carrossel_text_content{
