@@ -1,51 +1,69 @@
-.container_chamada_box {
-    grid-column: span 6;
-    padding: 18px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    top: 1;
-  }
+.grid_template_2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+}
 
-  .container_chamada_box a {
-    text-decoration: none;
-  }
+.container_chamada {
+  grid-column: span 6;
+  padding-top: 5%;
+}
 
-  .chamada_box_destaque {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 3%;
-  }
-  
-  .chamada_box_destaque img {
-      max-width: 100%;
-      border-radius: 10px;
-      min-width: 199px;
-  }
-  
-  .chamada_box_destaque h4 {
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 800;
-    color: green;
-  }
-  
-  .chamada_box_2 h4{
-      color: purple;
-  }
-  
-  .chamada_box_destaque p {
-    font-size: 17px;
-    font-weight: 800;
-    color: #585858;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    line-height: 18px;
-    max-height: 30%;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-transform: unset;
-  }
-  
+.container_chamada .chamada_box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 2em 0;
+}
+
+.container_chamada .chamada_box img {
+  width: 35%;
+  border-radius: 10px;
+}
+
+.container_chamada .chamada_box .content_chamada {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.container_chamada .chamada_box .content_chamada h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  color: purple;
+}
+
+.container_chamada .chamada_box .content_chamada h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #585858;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 26px;
+  max-height: 60%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-transform: unset;
+}
+
+.container_chamada .chamada_box .content_chamada p {
+  color: #707070;
+  font-size: 10px;
+}
+
+.container_chamada .chamada_box .content_chamada .temp_leitura {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.container_chamada .chamada_box .content_chamada .temp_leitura span {
+  width: 4px;
+  height: 4px;
+  background-color: #707070;
+  border-radius: 50%;
+}
