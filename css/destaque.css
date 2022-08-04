@@ -1,0 +1,71 @@
+.grid_template {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+}
+
+.destaque_content {
+  grid-column: span 6;
+}
+
+.capa_destaque {
+    max-width: 90%;
+    min-width: 89%;
+}
+
+.capa_destaque h4 {
+  text-transform: uppercase;
+  color: #b8023f;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.capa_destaque img {
+  max-width: inherit;
+  border-radius: 14px;
+}
+
+.destaque_content .carrossel_destaque {
+    background-color: #b8023f;
+    border-radius: 14px;
+    color: white;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    top: -53%;
+    left: 60%;
+    width: 50%;
+    height: 50%;
+}
+
+.destaque_content .carrossel_destaque p {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.destaque_content .carrossel_destaque h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 30px;
+    max-height: 70%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.destaque_content .carrossel_destaque .description_destaque {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 17px;
+  max-height: 30%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-weight:normal;
+  text-transform: unset;
+}
